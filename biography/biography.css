@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat/Montserrat-Black.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+
+body {
+    margin: 0;
+    background-color: #DCD7C9;
+    color: #2C2C2C;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+}
+
+.page-content {
+    margin: 1in;
+}
+
+h1 {
+    font-family: Georgia, 'Glacial Indifference', Arial;
+    text-align: center;
+    color: #2C3639;
+}
+
+h2 {
+    font-family: Montserrat, serif;
+    font-size: 25px;
+    text-align: center;
+    color: #2C3639;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    text-align: justify;
+    text-indent: 36px;
+    line-height: 2;
+}
+
+sup {
+    color: #A27B5C;
+    font-size: 0.8em;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #3F4E4F;
+    margin: 24px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: #3F4E4F;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #A27B5C;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+
+.childhood-row,
+.teenage-row,
+.college-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.childhood-row img,
+.teenage-row img,
+.college-row img {
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}

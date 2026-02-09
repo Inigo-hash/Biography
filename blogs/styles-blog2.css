@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #DCD7C9;
+    margin: 0;
+}
+
+p {
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 36px;
+    line-height: 1.6;
+    color: #2C2C2C;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.author {
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #3F4E4F;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #A27B5C;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* CONTENT WRAPPER */
+.content-wrapper {
+    margin: 0 1in;
+}
+
+/* HEADER */
+.page-header {
+    background-color: #DCD7C9;
+    padding: 60px 40px;
+    text-align: center;
+    border-bottom: 3px solid #A27B5C;
+    margin: 0 -40px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #2C2C2C;
+}
+
+.page-header .author {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #2C3639;
+}
+
+/* INTRODUCTION */
+.intro-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.league1 {
+    display: block;
+    flex-shrink: 0;
+    border-radius: 12px;
+    width: 500px;
+    margin: 0;
+}
+
+.introduction {
+    flex: 1;
+    margin: 0;
+}
+
+/* BODY */
+.body-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.league2 {
+    display: block;
+    flex-shrink: 0;
+    border-radius: 12px;
+    width: 500px;
+    margin: 0;
+}
+
+.body1 {
+    flex: 1;
+    margin: 0;
+}
+
+/* CONCLUSION */
+.conclusion {
+    margin: 20px 0;
+}
+
+.league3,
+.league5,
+.league6 {
+    display: block;
+    flex-shrink: 0;
+    border-radius: 12px;
+    width: 500px;
+    margin: 0;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* IMAGE STYLING */
+.image-figure {
+    margin: 0;
+    display: inline-block;
+}
+
+figcaption {
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+figcaption a {
+    color: #A27B5C;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+/* NAVIGATION BUTTONS */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 40px 0;
+}
+
+.nav-btn {
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #A27B5C;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}

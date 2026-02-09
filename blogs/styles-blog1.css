@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('fonts/GlacialIndifference-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    background-color: #DCD7C9;
+    color: #2C2C2C;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #3F4E4F;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #A27B5C;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* CONTENT WRAPPER */
+.content-wrapper {
+    margin: 0 1in;
+}
+
+/* HEADER */
+.page-header {
+    background-color: #DCD7C9;
+    padding: 60px 40px;
+    text-align: center;
+    border-bottom: 3px solid #A27B5C;
+    margin: 0 -40px 40px -40px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #2C3639;
+    margin-bottom: 8px;
+}
+
+.author {
+    text-align: center;
+    font-size: 16px;
+    color: #3F4E4F;
+}
+
+/* BLOG TEXT */
+.blog-text {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 36px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* IMAGE FIGURE */
+.image-figure {
+    float: right;
+    margin: 0 0 20px 40px;
+}
+
+/* BLOG IMAGE */
+.blog-image {
+    display: block;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* FIGCAPTION */
+figcaption {
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+figcaption a {
+    color: #A27B5C;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+/* NAVIGATION BUTTONS */
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0 40px 0;
+}
+
+.nav-btn {
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #A27B5C;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
