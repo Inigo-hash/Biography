@@ -89,6 +89,25 @@ body {
     transform: translateX(-5px);
 }
 
+/* ---------- BACK TO TOP BUTTON ---------- */
+.back-to-top {
+    display: inline-block;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #A27B5C;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #3F4E4F;
+    transform: translateY(-3px);
+}
+
 /* ---------- GALLERY GRID ---------- */
 .gallery-grid {
     display: grid;
@@ -169,6 +188,28 @@ body {
 
 .lightbox-close:hover {
     color: #A27B5C;
+}
+
+/* ---------- BACK TO TOP BUTTON ---------- */
+.back-to-top-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.back-to-top {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #A27B5C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
 
 /* ---------- RESPONSIVE ---------- */
