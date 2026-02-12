@@ -1,0 +1,192 @@
+/* ---------- FONTS ---------- */
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Black.ttf') format('opentype');
+    font-weight: 900;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* ---------- BASE ---------- */
+body {
+    margin: 0;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    background-color: #DCD7C9;
+    color: #2C2C2C;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: #3F4E4F;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #A27B5C;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* ---------- GALLERY CONTAINER ---------- */
+.gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.gallery-title {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: #2C3639;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ---------- BACK BUTTON ---------- */
+.back-btn {
+    display: inline-block;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #3F4E4F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #A27B5C;
+    transform: translateX(-5px);
+}
+
+/* ---------- GALLERY GRID ---------- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ---------- LIGHTBOX (CSS ONLY) ---------- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    z-index: 1000;
+}
+
+.lightbox-close:hover {
+    color: #A27B5C;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .gallery-container {
+        padding: 40px 20px;
+    }
+
+    .gallery-title {
+        font-size: 36px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        height: 300px;
+    }
+}

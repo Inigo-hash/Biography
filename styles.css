@@ -95,14 +95,13 @@ body {
 }
 
 .section-title {
-    display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #2C3639;
-    color: #ffffff;
-    border-radius: 10px;
+    font-size: 28px;
+    color: #2C3639;
     margin-bottom: 20px;
+    border-bottom: 3px solid #A27B5C;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
 .about p {

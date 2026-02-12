@@ -1,0 +1,126 @@
+/* ---------- FONTS ---------- */
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Black.ttf') format('opentype');
+    font-weight: 900;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+
+/* ---------- BASE ---------- */
+body {
+    margin: 0;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+    background-color: #DCD7C9;
+    color: #2C2C2C;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: #3F4E4F;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #A27B5C;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* ---------- GALLERY CONTAINER ---------- */
+.gallery-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.gallery-title {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: #2C3639;
+    margin-bottom: 60px;
+}
+
+/* ---------- GALLERY BUTTONS ---------- */
+.gallery-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding: 50px 40px;
+    background-color: #3F4E4F;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-btn:hover {
+    background-color: #A27B5C;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-btn:active {
+    transform: translateY(-2px);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .gallery-buttons {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gallery-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    .gallery-btn {
+        font-size: 20px;
+        padding: 40px 30px;
+    }
+}
